@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QR Studio Pro</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+
+<body>
+
+<div class="main-card">
+
+<h1 class="title">QR Studio Pro</h1>
+<p class="subtitle">Create Powerful Custom QR Codes</p>
+
+<div class="input-wrapper">
+<textarea id="qrText" placeholder="Enter URL, text, video link, anything..."></textarea>
+</div>
+
+<div class="color-section">
+<div class="color-box">
+<label>QR Color</label>
+<input type="color" id="qrColor" value="#ffffff">
+</div>
+
+<div class="color-box">
+<label>Background</label>
+<input type="color" id="bgColor" value="#000000">
+</div>
+</div>
+
+<div class="slider-section">
+<label>Border Size: <span id="borderValue">10</span>px</label>
+<input type="range" id="borderSize" min="0" max="50" value="10">
+</div>
+
+<div class="upload-section">
+<label class="upload-btn">
+Upload Center Logo
+<input type="file" id="logoUpload" accept="image/*">
+</label>
+</div>
+
+<div class="button-section">
+<button onclick="generateQR()" class="primary-btn ripple">Generate QR</button>
+<button onclick="downloadQR('png')" class="secondary-btn ripple">Download PNG</button>
+<button onclick="downloadQR('jpg')" class="secondary-btn ripple">Download JPG</button>
+</div>
+
+<div class="loader" id="loader"></div>
+
+<div id="qrOutput"></div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+  </html>
