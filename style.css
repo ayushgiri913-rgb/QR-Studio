@@ -181,3 +181,18 @@ transition: 0.4s;
 transform: scale(1.08);
 box-shadow: 0 0 40px magenta;
   }
+
+.seo-micro {
+    font-size: 11px;      /* छोटा text */
+    color: #777;          /* हल्का ग्रे */
+    text-align: center;   /* center alignment */
+    max-width: 600px;
+    margin: 40px auto 20px auto;
+    line-height: 1.4;
+}
+
+.seo-micro h2 {
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 6px;
+  }
